@@ -1,0 +1,233 @@
+body {
+    display: block;
+    width: 100%;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #E8DBD5;
+}
+
+.bg {
+    background-image: url("../img/face.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-size {
+    height: 100vh;
+}
+
+.main_menu ul li {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-right: 22px;
+}
+
+.banner_part {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner_part .banner_text {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.about_part {
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+.about_part .about_img {
+    padding: 100px 0px;
+}
+
+.about_part .about_img img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.about_part::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 55%;
+    background-color: #EBCDC3;
+    z-index: -1;
+}
+
+.solid_product_info {
+    background-image: url("../img/leaves-bg.png");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.solid_product_info {
+    padding: 130px 0px;
+    overflow: hidden;
+}
+
+.gallery_part {
+    padding-top: 130px;
+}
+
+.bg-grey {
+    background: #292929;
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+}
+
+footer {
+    color: grey;
+}
+
+footer p,
+a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+
+.btn-footer {
+    color: grey;
+
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 47px;
+}
+
+.btn-footer:hover {
+
+    text-decoration: none;
+
+}
+
+.form-footer input[type="text"] {
+    border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.form-footer input[type="button"] {
+    border: none;
+    background: #232323;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+
+.social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+
+}
+
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+}
+
+input[type=button] {
+    border-radius: 0 !important;
+}
+
+.bg-pink {
+    background-color: #DABCB2;
+}
+
+.bg-pink-dark {
+    background-color: #DABCB2;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.custom_form {
+    max-width: 75%;
+    border-radius: 0 !important;
+    color:#232323;
+}
+
+.title_h1{
+    font-weight: bold;
+    font-size: 8rem;
+}
