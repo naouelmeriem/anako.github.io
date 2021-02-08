@@ -1,11 +1,13 @@
 .stepper .nav-tabs {
   position: relative;
 }
-.stepper .nav-tabs > li {
+
+.stepper .nav-tabs>li {
   width: 10%;
   position: relative;
 }
-.stepper .nav-tabs > li:after {
+
+.stepper .nav-tabs>li:after {
   content: '';
   position: absolute;
   background: #f1f1f1;
@@ -16,16 +18,20 @@
   left: 50%;
   z-index: 1;
 }
-.stepper .nav-tabs > li.completed::after {
+
+.stepper .nav-tabs>li.completed::after {
   background: black;
 }
-.stepper .nav-tabs > li:last-child::after {
+
+.stepper .nav-tabs>li:last-child::after {
   background: transparent;
 }
-.stepper .nav-tabs > li.active:last-child .round-tab {
+
+.stepper .nav-tabs>li.active:last-child .round-tab {
   background: black;
 }
-.stepper .nav-tabs > li.active:last-child .round-tab::after {
+
+.stepper .nav-tabs>li.active:last-child .round-tab::after {
   content: '✔';
   color: #fff;
   position: absolute;
@@ -35,6 +41,7 @@
   top: 0;
   display: block;
 }
+
 .stepper .nav-tabs [data-toggle='tab'] {
   width: 25px;
   height: 25px;
@@ -44,11 +51,15 @@
   padding: 0;
   color: #f1f1f1;
 }
+
 .stepper .nav-tabs [data-toggle='tab']:hover {
   background: transparent;
   border: none;
 }
-.stepper .nav-tabs > .active > [data-toggle='tab'], .stepper .nav-tabs > .active > [data-toggle='tab']:hover, .stepper .nav-tabs > .active > [data-toggle='tab']:focus {
+
+.stepper .nav-tabs>.active>[data-toggle='tab'],
+.stepper .nav-tabs>.active>[data-toggle='tab']:hover,
+.stepper .nav-tabs>.active>[data-toggle='tab']:focus {
   color: black;
   cursor: default;
   border: none;
@@ -59,10 +70,44 @@
   background-color: rgba(255, 255, 255, .3);
 }
 
+@media screen and (min-width: 780px) {
+  .u-marge {
+    margin-top: -80PX;
+    margin-bottom: -80px;
+  }
+}
+
+.pannel-result {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
 .stepper .tab-pane {
   position: relative;
   padding-top: 50px;
 }
+
 .stepper .round-tab {
   width: 25px;
   height: 25px;
@@ -76,11 +121,13 @@
   position: absolute;
   left: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
+
 .stepper .completed .round-tab {
   background: black;
 }
+
 .stepper .completed .round-tab::after {
   content: '✔';
   color: #fff;
@@ -91,31 +138,37 @@
   top: 0;
   display: block;
 }
+
 .stepper .active .round-tab {
   background: #fff;
   border: 2px solid black;
 }
+
 .stepper .active .round-tab:hover {
   background: #fff;
   border: 2px solid black;
 }
+
 .stepper .active .round-tab::after {
   display: none;
 }
+
 .stepper .disabled .round-tab {
   background: #fff;
   color: #f1f1f1;
   border-color: #f1f1f1;
 }
+
 .stepper .disabled .round-tab:hover {
   color: #4dd3b6;
   border: 2px solid #a6dfd3;
 }
+
 .stepper .disabled .round-tab::after {
   display: none;
 }
 
-.checkbox-lg .custom-control-label::before, 
+.checkbox-lg .custom-control-label::before,
 .checkbox-lg .custom-control-label::after {
   top: .8rem;
   width: 1.55rem;
@@ -123,13 +176,13 @@
 }
 
 .checkbox-lg .custom-control-label {
-   font-size: 1.75rem;
-   margin-bottom: 1rem;
-   padding-left: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
 }
 
 
-.checkbox-xl .custom-control-label::before, 
+.checkbox-xl .custom-control-label::before,
 .checkbox-xl .custom-control-label::after {
   top: 1.2rem;
   width: 1.85rem;
